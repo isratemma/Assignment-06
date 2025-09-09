@@ -67,6 +67,63 @@
       </div>
     </section>
 
+    <main class="px-0 md:px-10">
+  <section class="p-4">
+  <!-- Hamburger for mobile -->
+  <button
+    id="hamburger"
+    class="sm:hidden mb-4 p-2 bg-blue-500 text-white rounded"
+  >
+    &#9776;
+  </button>
+
+  <div
+    id="choose-your-trees"
+    class="mx-auto py-10 max-w-[1680px]"
+  >
+    <h2 class="text-2xl md:text-3xl font-semibold text-center mb-10">
+      Choose Your Trees
+    </h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_3fr_1fr] gap-6">
+      <!-- categories  l side  -->
+      <div
+        id="categories"
+        class="categories order-1 lg:order-1"
+      >
+        <h3 class="text-lg md:text-xl font-semibold mb-2">Categories</h3>
+        <ul
+          id="category-buttons"
+          class="category-buttons flex flex-col mt-2 gap-2"
+        >
+          <li>
+            <button
+              id="all-trees"
+              class="category-btn hover:bg-[#076d2c] rounded text-left px-2 py-1 hover:text-white cursor-pointer w-full text-sm sm:text-base"
+              
+            >
+              All Trees
+            </button>
+          </li>
+         
+        </ul>
+      </div>
+
+      <!-- all card  m side-->
+      <div
+        id="cards"
+        class="cards order-2 grid grid-cols-1 gap-4  md:grid-cols-2 2xl:grid-cols-3 md:gap-2  mx-auto"
+      >
+        <!-- popup -->
+        <div id="spinner" class=" justify-center items-center hidden col-span-full">
+          <div class="w-12 h-12 border-4 border-dashed rounded-full border-green-500 animate-spin"></div>
+        </div>
+
+        <!-- Example Tree Card -->
+        <div class="bg-white p-4 rounded shadow">Tree Card</div>
+      </div>
+
+
 
 
 
